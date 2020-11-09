@@ -2,13 +2,13 @@
 
 ### Problem Statement
 
-In the US, all high school students are required to take college entrance tests before they submit their application to any college. The SAT and ACT are the most popular college entrance test administered in the US.
+In the US, all high school students are required to take college entrance tests before they submit their application to any college. The SAT and ACT are the most popular college entrance test administered in the US. 
 
 The question is how might we increase the participation rate among high school students in the United States in taking the SAT test for college admissions so that I can make recommendation to the College Board that administers the SAT test.
 
 ### Executive Summary
 
-In this project, I will be examing the data for SAT and ACT in 2017 and 2018. The data includes participation rates, mean score of each subject, and total/composite scores which are organized at the state level in alphabet order.
+In this project, I will be examine the data for SAT and ACT in 2017 and 2018. The data includes participation rates, mean score of each subject, and total/composite scores which are organized at the state level in alphabet order. 
 
 Throughout this data analysis exploration, I will perform data preparation, data visualization and analyzing the SAT and ACT participation rates as well as the scoring across the state in the US. Then, I will identify trend in the data and combine with my research to develop potential solutions to the problem statement.
 
@@ -48,11 +48,11 @@ __Data source:__
 
 I noticed many interesting changes in a number of states in terms of SAT and ACT participation rates. 2 states in particular caught my attention.
 
-First we look at ACT particiation rate for __Colorado__ in 2017 and 2018. You can see the participation rate increased from 11% to 100%, which is 809% increment. While at the same time, the ACT participation rate has decreased from 100% to 30%. Such significant changes prompted me to search for an explanation. In 2017, the state authority switched from mandatory ACT to mandatory SAT testing which explained the changes. The core reason for the switch was that state officials deemed the SAT test to be more closely aligned to the state's academic standard.
+First we look at ACT participation rate for __Colorado__ in 2017 and 2018. You can see the participation rate increased from 11% to 100%, which is 809% increment. While at the same time, the ACT participation rate has decreased from 100% to 30%. Such significant changes prompted me to search for an explanation. In 2017, the state authority switched from mandatory ACT to mandatory SAT testing which explained the changes. The core reason for the switch was that state officials deemed the SAT test to be more closely aligned to the state's academic standard.
 
 Now we will look at participation rate for __Illinois__ in 2017 and 2018. The participation rate for the SAT has increased by 1,000%, which is a huge increment meanwhile the ACT decreased by 54%. I discovered that state switched from mandatory ACT to mandatory SAT test. The Illinois State Board of Education (ISBE) claimed that SAT test is better aligned with the state's academic standard. Thus, ISBE has made SAT test mandatory for high school graduates.
 
-Another inconsistency I observed was in __Alaska__. Alaska shows different result of participation rate whereby the sum of SAT and ACT test participation rate in 2018 is only 76%, which is less than 100%. In 2017, the Alaska Legislature relaxed the previous requirement that required students to take only SAT or ACT and provided the option to take the workKeys test as well for admission evaluation. You can see the participation rate for ACT in 2018 has decreased by 49% while SAT increased by 13%.
+Another inconsistency I observed was in __Alaska__. Alaska shows different result of participation rate whereby the sum of SAT and ACT test participation rate in 2018 is less than 76% considreing students taking both tests. In 2017, the Alaska Legislature relaxed the previous requirement that required students to take only SAT or ACT and provided the option to take the workKeys test as well for admission evaluation. You can see the participation rate for ACT in 2018 has decreased by 49% while SAT increased by 13%.
 
 __References:__
 - [Testive: Colorado Changed to the SAT in 2017](https://www.testive.com/colorado-sat-change-2017/#:~:text=On%20April%2011th%2C%202017%20all,a%20new%20four%20hour%20exam.)
@@ -62,19 +62,21 @@ __References:__
 
 ### Conclusions and Recommendations
 
-Based on my data exploration and outside research, the participation on either of the test is mainly influenced by state authorities. A small portion of the participation rate is came from the individual preference. In the US, 18 states have mandated the ACT test and 11 states have mandated the SAT test while the rest of the states have no restriction on the choice of college entrance test.
+Based on my data exploration and outside research, the participation on either of the test is mainly influenced by state authorities. A small portion of the participation rate came from the individual preference. In the US, 18 states have mandated the ACT test and 11 states have mandated the SAT test while the rest of the states have no restriction on the choice of college entrance test.
 
-Let's consider __Iowa__ as it only has less than 4% of the SAT participation rate in 2017 and 2018. Iowa has not made any test mandatory and all students can go with their preference. In order to the boost the SAT participation rate in Iowa, the College Board should consider to revamp and improve the SAT test so that it align with Iowa education standard and propose to state authority. 
+Let's consider __Iowa__ as it only has less than 4% of the SAT participation rate in 2017 and 2018. Iowa has not made any test mandatory and all students can go with their preference. In order to the boost the SAT participation rate in Iowa, the College Board should consider to revamp and improve the SAT test so that it aligns with Iowa education standard and propose to state authority. 
 
 There are 2 broad approaches to driving change- the __Carrot__ and the __Stick__. The Carrot relies on incentives while the Stick is more directive.
 
-__Carrot:__ The College Board should consider providing additional subsidies to the state authority to help the state support the participants from low income families. Besides that, College Board should consider offering free tuition classes, either remotely or on campus to help the students prepare for the SAT test. This is beacuse the sudden switch of test might lead to large changes to average scores if the high schools curriculum is no aligned to the test or the students are not prepared for the SAT test. This happened in Colorado and Illinois.
+__Carrot:__ The College Board should consider providing additional subsidies to the state authority to help the state support the participants from low income families. Besides that, College Board should consider offering free tuition classes, either remotely or on campus to help the students prepare for the SAT test. This is because the sudden switch of test might lead to large changes to average scores if the high schools' curriculum is no aligned to the test or the students are not prepared for the SAT test. This happened in Colorado and Illinois. College Board should also introduce SAT school day on a weekday to allow students to be in a familiar setting or fee waiver benefits for low-income students.
 
-__Stick:__ The Iowa Department of Education should consider making SAT test mandatory as the college admission requirement which provides benefits to the education system and the students. High schools will make sure all the subjects are covered and educate the students with the proper method and mindset to tackle SAT test. Besides that, the SAT test can be use to benchmark students and to analyse the high-school education system.
+__Stick:__ The Iowa Department of Education should consider making SAT test mandatory as the college admission requirement which provides benefits to the education system and the students. High schools will make sure all the subjects are covered and educate the students with the proper method and mindset to tackle SAT test. Besides that, the SAT test can be used to benchmark students and to analyse the high-school education system.
 
-Overall, from my perspective, all state authorities should consider encouraging participants to take more than one test in order to give themselves more opportunities to apply for colleges in other states. Further research should be carried out on how to encourage the participants to take more than one test and show the participants the benefits of taking more than one test.
+In conclusion, the project analyzed SAT and ACT participation rates and their respective scores in 2017 and 2018. Although SAT participation rates have some improvement in certain states, the ACT still has a stronghold in many states which most states require students to take ACT. The College Board should target the states with lower participation rates and adopt the solutions recommended above.
 
-In conclusion, I hope I have demonstrated in a number of instances above that the states' participation rate is not the ideal benchmark for comparison due to the different number of participants in each state. The sample should be drawn from the population randomly to make the analysis more comparable. 
+Overall, from my perspective, all state authorities should consider encouraging participants to take more than one test in order to give themselves more opportunities to apply for colleges in other states. Further research should be carried out on how to encourage the participants to take more than one test and show the participants the benefits of taking more than one test. The College Board should target the states with low participation rates. College could adopt the above recommendations.
+
+In addition, I hope I have demonstrated in a number of instances above that the states' participation rate is not the ideal benchmark for comparison due to the different number of participants in each state. The sample should be drawn from the population randomly to make the analysis more comparable.
 
 __References:__
 - [Does your state require the SAT or ACT?](https://www.testive.com/state-sat-act/)
