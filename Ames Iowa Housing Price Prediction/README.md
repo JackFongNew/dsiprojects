@@ -1,12 +1,12 @@
-# Project 2: Housing Price Prediction in Ames, Iowa
+## Project 2: Housing Price Prediction in Ames, Iowa
 
 ## Executive Summary
 
 ### Problem Statement
-My problem statement is: How might I better estimate housing prices in Ames, Iowa so that I can manage potential buyers' expectations.
+My problem statement is: How might I better estimate housing prices in Ames, Iowa so that I can manage potential buyers' expectations?
 
 ### Approach
-My approach of this project is to study the historical housing prices in Ames and the housing dataset features provided by Ames, Iowa Assessor's Office. The processes involved data preparation, data massage, data visualization, data analysis and regularization. 
+My approach of this project is to study the historical housing prices in Ames and the housing dataset features provided by Ames, Iowa Assessor's Office. I will build a linear regression model, and will be evaluating its performance using the Root Mean Squared Error (RMSE) metric. The processes involved data preparation, data massage, data visualization, regularization and recursive feature elimination.  
 
 ### Stakeholder
 I am a freelance data analyst building a housing price prediction model and my prime stakeholders are property agents/agencies who will use the model to manage their potential buyers' expectations.
@@ -14,7 +14,7 @@ I am a freelance data analyst building a housing price prediction model and my p
 Other potential stackholders include local banks and Ames Housing Authority.
 
 ### Data source
-The housing data set provides historical housing prices from 1872 to 2010, and 80 other features related to the property, locations and sales processes.
+The housing data set provides historical housing prices from 206 to 2010, and 80 other features related to the property, locations and sales processes.
 - [Ames, Iowa Housing Dataset](https://www.kaggle.com/c/dsi-us-6-project-2-regression-challenge/data)
 
 ### Data Dictionary
@@ -120,13 +120,28 @@ However, the top 3 features that hurt the value most are:
 
 From my knowledge of housing prices and the property industry in general, it surprises me that location does not rate higher as the predictor. Moving forward, I should consider to include more location related features to improve my prediction. The aging of the house will obviously reduce the housing price.
 
+## Conclusion
+From my analysis of the 80 features, I have created 28 new features (7 from the actual features, 6 new combined features and 15 dummy features). In the end, I have achieved the best results using the ElasticNEt regression and the model is good for price prediction.
+
+Of the top 5 features out of the 28 features in terms of price predictability based on the ElasticNet bar chart, 4 of them relate to the housing profile and only 1 (#4 neighborhood) relates to location.
+1. above ground living area
+2. overall (combination of overall quality and overall condition)
+3. total basement area
+4. neighborhood
+5. quality (quality rating of various features)
+
+However, the top 3 features that hurt the value most are:
+1. overall age(age of the house with/ or without remodeling)
+2. ms_subclass_30
+3. ms_subclass_160
+
 ## Recommendations
 ### Value Impact Business Recommendations
 The owner of the house can do a number of remodeling improvement to increase the value of the house but these would need to be cost justified. Example include expansion of the masonry veneer area, increasing size of garage, changing garage style or house style.
 
 Based of the correlation between the neighborhoods and saleprice, the neighborhoods worth investing in are Timberland, College Creek, Somerset, Stone Brook, Northridge Heights, Veenker and Northridge.
 
-The model is constructed based of the Ames, Iowa dataset. The basic predictability of the model is still applicable but it has to be customized based on the other cities features which involve changes.
+The model is constructed based of the Ames, Iowa dataset and will not generalize well to other cities since it includes specific neighbourhoods by name. The basic predictability of the model is still applicable but it has to be customized based on the other cities features which involve changes.
 
 ### Data Massage
 When running data massage routine, we must ensure our actions maintain data integrity, e.g. determining the percentage of allowable data to eliminate, imputation of the missing data or the consideration of the outlier(s). All these decisions will affect the prediction outcome.
@@ -137,10 +152,11 @@ Feature engineering process requires lots of research, relevant domain knowledge
 ### Regression Model Selection
 It is always good to apply various model to perform the regularization to get the better outcome. For my selected features, Ridge regression has computed lesser root mean squared error (RMSE) compare to the other regression model.
 
-## Overall
-The housing prices are recorded from 1872 till 2010 whereby many other aspects are not considered such as world economy crisis, changes in state government housing policies, housing demand, land availability for development etc. All of these aspects will lead to fluctuations in housing prices. 
 
-From my perspective, we have to include all the factors capable of impacting housing prices. Doing so, we can have a better prediction of the housing price.
+## Further Recommendation
+From my knowledge of housing prices and the property industry in general, it surprises me that location does not rate higher as the predictor. I should consider to include more location related features to improve my prediction.
+
+From my perspective, we have to include all the factors capable of impacting housing prices such as economy crisis and changes in state government housing policies. Doing so, we can have a better prediction of the housing price.
 
 In addition, it is recommended that the model has to be revisited and updated with new information to ensure the model is improved.
 
