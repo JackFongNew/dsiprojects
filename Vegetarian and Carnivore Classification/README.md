@@ -44,7 +44,7 @@ In this project, I have used 3 different classifier models and completed a compa
 
 From the analysis, Logistic Regression model has successfully solved my problem statement because it has the highest test accuracy (90.31%) of the prediction with lowest combination of false positive (29) and false negative (24) values. 
 
-The accuracy of the model, low values of false positive and false negative are important to my analysis because I want to correctly interpret the customers' information so that my company can better serve their needs.
+The accuracy of the model, low values of false positive and false negative are important to my analysis because I want to correctly interpret the customers' information so that my company can better serves their needs.
 
 ## Recommendation
 1. __Classifier Model__ <br> Different classifiers can be used and their performance can be evaluated to find better predictions. Tuning of parameters would also help to get a better predictions. </br>
