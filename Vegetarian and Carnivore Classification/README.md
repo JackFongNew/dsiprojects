@@ -12,20 +12,19 @@ I am a data scientist working in a food industry company. My purpose of this pro
 Nowadays, marketing strategy has moved from B2C method (companies create and sell products that they think the customers needs) to the C2B method (observing customers' behavior, listening and reviewing customers' comments and co-create new products). The C2B approach evolved from the growth of popular consumer-generated media and content across different consumer online outlets, such as social networks, websites, blogs, podcasts or videos. To be able to better serve and achieve my customers' expectations, I would have to know the latest and hottest topics about food and the best place for me to get this information is through tracking trending topics on social media or blogs.
 
 ### Methodology
-1. Set the problem statement/ business approach.
-2. Data resource searching (Reddit).
-3. Web scraping and data collection.
-4. Data preparation and data massage.
-5. Exploratory Data Analysis.
-6. Regularization and Classification: Logistic Regression, Multinomial Naive Bayes, Random Forest Classification.
-7. Evaluation: Confusion Matrix.
-8. Inferential Statistic.
-9. Conclusion and Further Research.
+1. Set the problem statement.
+2. Web scraping and data collection(Reddit).
+3. Data massage and data preparation.
+4. Exploratory data analysis.
+5. Regularization and classification: Logistic Regression, Multinomial Naive Bayes, Random Forest.
+6. Evaluation: Confusion Matrix and ROC curve with AUC.
+7. Misclassification Analysis.
+8. Conclusion and Recommendations.
 
 ### Stakeholder
 My main stakeholder for this project will be my company's marketing team whereby they can utilize the information to make better decision for new products and services.
 
-### Data source
+### Data Source
 Reddit is an American social news aggregation, web content rating and discussion website. It is a network of communities based on people's interests. I will be using the posts from Reddit website for my project.
 
 - [Reddit - Vegetarian](https://www.reddit.com/r/vegetarian/)
@@ -45,7 +44,7 @@ In this project, I have used 3 different classifier models and completed a compa
 
 From the analysis, Logistic Regression model has successfully solved my problem statement because it has the highest test accuracy (90.31%) of the prediction with lowest combination of false positive (29) and false negative (24) values. 
 
-The accuracy of the model, low values of false positive and false negative are important to us because we want to correctly interpret the customers' information so that we can better serve their needs.
+The accuracy of the model, low values of false positive and false negative are important to my analysis because I want to correctly interpret the customers' information so that my company can better serve their needs.
 
 ## Recommendation
 1. __Classifier Model__ <br> Different classifiers can be used and their performance can be evaluated to find better predictions. Tuning of parameters would also help to get a better predictions. </br>
