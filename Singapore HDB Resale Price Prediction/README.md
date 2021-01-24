@@ -17,7 +17,8 @@ In the early years, owners were not able to resell their flats but this changed 
 
 Purchasers of resale HDB flats are usually those not eligible to purchase the Build-To-Order (BTO) flat (singles above 35 yo) or they are looking for a HDB flat that better suits their requirements. Obviously when choosing a flat there are many considerations that impact the potential price: town areas, nearby amenities/ facilities, flat size, flat type etc. 
 
-In order to make life easier for those buyers, I have decided to study and research the Singapore HDB resale market, explore the key factors that affecting the resale price and provide a price prediction tool as well as make some recommendations for people who are planning to buy a HDB in near future. 
+In order to make life easier for those buyers, I have decided to study and research the Singapore HDB resale market, explore the key factors that affecting the resale price and provide a price prediction tool as well as make some recommendations for people who are planning to buy a HDB in near future.
+
 I am a freelance data scientist and have selected this project out of self-interest. 
 
 My __problem statement__ for this project is __how might I be able to use a regression machine learning model to build a price prediction tool to better predict the HDB resale price for those using the tool.__ My main __target audience__ of this project is the customer who is interested to purchase the resale HDB flat, as well as the current owner that hopes to sell their HDB flat.
@@ -32,6 +33,7 @@ My goal for this project is to create both a high performing and generalizable r
 
 
 ## Data source:
+
 - [Singapore hdb resale flat data](https://data.gov.sg/dataset/resale-flat-prices)
 - [Singapore mrt coordinates](https://www.kaggle.com/yxlee245/singapore-train-station-coordinates)
 - [Singapore shopping mall list](https://en.wikipedia.org/wiki/List_of_shopping_malls_in_Singapore)
@@ -40,6 +42,7 @@ My goal for this project is to create both a high performing and generalizable r
 - [Singapore Top Primary School](https://www.salary.sg/2020/best-primary-schools-2020-by-popularity/)
 
 ## Table of Content:
+
 1. EDA - Original Dataset - 2017 onward <br>
     1.1 Data Acquisition and Exploration <br>
     1.2 Univariate Plots <br>
@@ -99,7 +102,7 @@ My goal for this project is to create both a high performing and generalizable r
 
 As you can see from the work above, I have undertaken comprehensive analysis.
 
-In summary, I assessed the EDA, undertook feature engineering/selection and ran regression machine learning models to select the most predictive model. As a result, I have successfully created a model that is able to predict the HDB flat `resale_price` in Singapore. The Gradient Boosting Regressor has achieved satisfactory results (RMSE: \\$20,394, R-squared: 98.24\%) for HDB resale price prediction compare to the base model (Linear Regression) results (RMSE: \\$35,954, R-squared: 94.54\% - under section 2.3: Checking for Homoscedasticity). The Gradient Boosting Regressor model is superior to a simple Linear Regression model due to xxxx
+In summary, I assessed the EDA, undertook feature engineering/selection and ran regression machine learning models to select the most predictive model. As a result, I have successfully created a model that is able to predict the HDB flat `resale_price` in Singapore. The Gradient Boosting Regressor has achieved satisfactory results (RMSE: \\$20,394, R-squared: 98.24\%) for HDB resale price prediction compare to the base model (Linear Regression) results (RMSE: \\$35,954, R-squared: 94.54\% - under section 2.3: Checking for Homoscedasticity). The Gradient Boosting Regressor model is superior to a simple Linear Regression model because Gradient Boosting is a type of machine learning boosting that relies on the intuition that the best possible next model, when combined with previous models, minimizes the overall prediction error. The key idea is to set the target outcomes for this next model in order to minimize the error. Linear Regression establishes the relationship between two variables using a straight line and it doesn't consider the error.
 
 <img src='dataset/feature_importance.png' content-align="center" width="80%">
 
