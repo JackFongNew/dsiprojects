@@ -102,7 +102,7 @@ My goal for this project is to create both a high performing and generalizable r
 
 As you can see from the work above, I have undertaken comprehensive analysis.
 
-In summary, I assessed the EDA, undertook feature engineering/selection and ran regression machine learning models to select the most predictive model. As a result, I have successfully created a model that is able to predict the HDB flat `resale_price` in Singapore. The Gradient Boosting Regressor has achieved satisfactory results (RMSE: \\$20,394, R-squared: 98.24\%) for HDB resale price prediction compare to the base model (Linear Regression) results (RMSE: \\$35,954, R-squared: 94.54\% - under section 2.3: Checking for Homoscedasticity). The Gradient Boosting Regressor model is superior to a simple Linear Regression model because Gradient Boosting is a type of machine learning boosting that relies on the intuition that the best possible next model, when combined with previous models, minimizes the overall prediction error. The key idea is to set the target outcomes for this next model in order to minimize the error. Linear Regression establishes the relationship between two variables using a straight line and it doesn't consider the error.
+In summary, I assessed the EDA, undertook feature engineering/selection and ran regression machine learning models to select the most predictive model. As a result, I have successfully created a model that is able to predict the HDB flat `resale_price` in Singapore. The Gradient Boosting Regressor has achieved satisfactory results (RMSE: \$20,394, R-squared: 98.24\%) for HDB resale price prediction compare to the base model (Linear Regression) results (RMSE: \$35,954, R-squared: 94.54\% - under section 2.3: Checking for Homoscedasticity). The Gradient Boosting Regressor model is superior to a simple Linear Regression model because Gradient Boosting is a type of machine learning boosting that relies on the intuition that the best possible next model, when combined with previous models, minimizes the overall prediction error. The key idea is to set the target outcomes for this next model in order to minimize the error. Linear Regression establishes the relationship between two variables using a straight line and it doesn't consider the error.
 
 <img src='dataset/feature_importance.png' content-align="center" width="80%">
 
@@ -117,7 +117,7 @@ I have also created a user-friendly __web application__ that require the user to
 
 ## Benefits of the model
 
-1. The predictive price is presented as a range e.g., the predicted price is \\$450,000, the range is between \\$430,000 to \\$470,000,
+1. The predictive price is presented as a range e.g., the predicted price is \$450,000, the range is between \$430,000 to \$470,000,
 2. Multiple features to improve price prediction,
 3. User-friendly web application,
 4. Can be used equally by buyer, seller, property agents or agencies and others.
