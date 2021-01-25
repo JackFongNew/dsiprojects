@@ -8,7 +8,7 @@ import pickle
 
 #import the data
 hdb_raw = pd.read_csv("dataset/hdb_17_features_dropped_3.csv")
-image = Image.open("hdb.jpg")
+image = Image.open("dataset/hdb.jpg")
 st.title("Welcome to the HDB Flat Resale Price Prediction App")
 st.image(image, use_column_width=True)
 

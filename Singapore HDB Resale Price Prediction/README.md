@@ -21,19 +21,20 @@ In order to make life easier for those buyers, I have decided to study and resea
 
 I am a freelance data scientist and have selected this project out of self-interest. 
 
-My __problem statement__ for this project is __how might I be able to use a regression machine learning model to build a price prediction tool to better predict the HDB resale price for those using the tool.__ My main __target audience__ of this project is the customer who is interested to purchase the resale HDB flat, as well as the current owner that hopes to sell their HDB flat.
+My __problem statement__ for this project is __how might I be able to use a regression machine learning algorithm to build a price prediction tool to better predict the HDB resale price for those using the tool.__ 
 
-The original dataset for this project is obtained from the data.gov.sg website. The dataset contains information on all the resale HDB flat transactions for year 2017 - Oct 2020, more than 80,000 resale HDB data and 11 features.
+My main __target audience__ of this project is the customer who is interested to purchase the resale HDB flat, as well as the current owner that hopes to sell their HDB flat and the property agents/agencies.
 
-My goal for this project is to create both a high performing and generalizable regression model for predicting HDB resale price, using various regression machine learning techniques, feature engineering, feature selection and regularization. Then, I will be looking to evaluate the performance of the models using:
+The original dataset for this project is obtained from the data.gov.sg website. The dataset contains information on all the resale HDB flat transactions for January 2017 - October 2020, more than 80,000 resale HDB data and 11 features.
 
-1. Root mean squared error (RMSE) - the measure of the difference between values predicted by the model and their actual values. Lower values of RMSE indicate better fit.
+__My goal__ for this project is to create both a high performing and generalizable regression model for predicting HDB resale price, using various regression machine learning techniques, feature engineering, feature selection and regularization. Then, I will be looking to evaluate the performance of the models using:
 
-2. R-Squared - a statistical measure between 0 and 1 which calculates how similar a regression line is to the data it's fitted to. If it's a 1, the model 100% predicts the data variance; if it's a 0, the model predicts none of the variance.
+1. __Root mean squared error (RMSE)__ - the measure of the difference between values predicted by the model and their actual values. Lower values of RMSE indicate better fit.
+
+2. __R-Squared (accuracy)__ - a statistical measure between 0 and 1 which calculates how similar a regression line is to the data it's fitted to. If it's a 1, the model 100% predicts the data variance; if it's a 0, the model predicts none of the variance.
 
 
 ## Data source:
-
 - [Singapore hdb resale flat data](https://data.gov.sg/dataset/resale-flat-prices)
 - [Singapore mrt coordinates](https://www.kaggle.com/yxlee245/singapore-train-station-coordinates)
 - [Singapore shopping mall list](https://en.wikipedia.org/wiki/List_of_shopping_malls_in_Singapore)
@@ -42,18 +43,17 @@ My goal for this project is to create both a high performing and generalizable r
 - [Singapore Top Primary School](https://www.salary.sg/2020/best-primary-schools-2020-by-popularity/)
 
 ## Table of Content:
-
 1. EDA - Original Dataset - 2017 onward <br>
     1.1 Data Acquisition and Exploration <br>
     1.2 Univariate Plots <br>
     1.3 Checking for Homoscedasticity <br>
     1.4 Statsmodels <br>
-2. Data Cleaning and Wrangling - 2017 onward <br>
+2. Data Wrangling and Feature Engineering - 2017 onward <br>
     2.1 Data Cleaning <br>
     2.2 Feature Engineering <br>
     2.3 Checking for Homoscedasticity <br>
     2.4 HDB Geospatial <br>
-3. EDA and Feature Selection - 2017 onward <br>
+3. EDA, Preprocessing and Feature Selection - 2017 onward <br>
     3.1 Scatter Plots of Numerical Features <br>
     3.2 Histograms of Numerical Features <br>
     3.3 Histograms and Boxplots of Categorical Features <br>
@@ -98,21 +98,27 @@ My goal for this project is to create both a high performing and generalizable r
 
 11. resale_price (float): This feature shows the price of the HDB flat sold in Singapore dollar. This will be the target variable.
 
+
+
 ## Conclusion
 
 As you can see from the work above, I have undertaken comprehensive analysis.
 
-In summary, I assessed the EDA, undertook feature engineering/selection and ran regression machine learning models to select the most predictive model. As a result, I have successfully created a model that is able to predict the HDB flat `resale_price` in Singapore. The Gradient Boosting Regressor has achieved satisfactory results (RMSE: \$20,394, R-squared: 98.24\%) for HDB resale price prediction compare to the base model (Linear Regression) results (RMSE: \$35,954, R-squared: 94.54\% - under section 2.3: Checking for Homoscedasticity). The Gradient Boosting Regressor model is superior to a simple Linear Regression model because Gradient Boosting is a type of machine learning boosting that relies on the intuition that the best possible next model, when combined with previous models, minimizes the overall prediction error. The key idea is to set the target outcomes for this next model in order to minimize the error. Linear Regression establishes the relationship between two variables using a straight line and it doesn't consider the error.
+In summary, I assessed the EDA, undertook feature engineering/selection and ran regression machine learning models to select the most predictive model. 
+
+As a result, I have successfully created a model that is able to predict the HDB flat `resale_price` in Singapore. The Gradient Boosting Regressor has achieved satisfactory results (RMSE: \$20,394, R-squared: 98.24\%) for HDB resale price prediction compare to the base model (Linear Regression) results (RMSE: \$35,954, R-squared: 94.54\% - under section 2.3: Checking for Homoscedasticity). 
+
+The Gradient Boosting Regressor model is superior to a simple Linear Regression because Gradient Boosting is a type of machine learning boosting that relies on the intuition that the best possible next model, when combined with previous models, minimizes the overall prediction error. The key idea is to set the target outcomes for this next model in order to minimize the error. But Linear Regression establishes the relationship between two variables using a straight line and it doesn't consider the error.
 
 <img src='dataset/feature_importance.png' content-align="center" width="80%">
 
-The top 5 features that impact the resale price based on the Gradient Boosting Regressor feature importance scores are:
+Histogram above shows the order list of the features that impact the resale price based on the Gradient Boosting Regressor feature importance scores. The top 5 features are:
 1. floor_area_sqm – it is obvious that the bigger the space, the greater the price of the HDB flat,
 2. dist_to_city – the nearer to the city, you will able to access to the better amenities and facilities,
 3. remaining_year – the longer the lease, you will able to apply for larger loan from the HDB or banks and the condition of the HDB flat would be relatively better,
 4. mean_floor – the higher floor, you will have better view, cooler, less noise, less mosquitoes etc,
 5. dist_to_pri_sch – Singapore citizen who live within 1km of the school will be given priority to get into the primary school. Most of the Singaporean families will tend stay near to the top primary school so that their children will able to get into the school.
-
+    
 I have also created a user-friendly __web application__ that require the user to select the features of their preferred HDB flat. Then the back-end application will generate the predictive price to provide the real time prediction.
 
 ## Benefits of the model
@@ -134,7 +140,7 @@ Although my model has generated a reasonable low RMSE and high R-squared value (
 
 There are many other factors should be taken into consideration such as overall flat conditions, overall Singapore economic conditions, government housing regulation or prospective future development at different town. In addition, it would be better if we have the information of the HDB flat original value when it was first sold.
 
-People's individual motivations will impact the price they are prepared to pay e.g., if I work in the West, I am likely to be prepared to pay more for HDB flat in the West than someone working in the East as we both factor in convenience in regards to travel in our price expectation. For someone working and living in the west, the travel time from home to CBD may not be of high priority, since they will spend most of their time within their neighbouirhood.
+People's individual motivations will impact the price they are prepared to pay e.g., if I work in the West, I am likely to be prepared to pay more for HDB flat in the West than someone working in the East as we both factor in convenience in regards to travel in our price expectation. For someone working and living in the west, the travel time from home to CBD may not be of high priority, since they will spend most of their time within their neighbourhood.
 
 Likewise, other social factor influences the price e.g., a neighbourhood may be undergoing upgrading new shopping mall, facilities etc and making it a "cooler" place to live. None of the datasets included capture such an issue.
 
