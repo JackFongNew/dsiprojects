@@ -19,13 +19,15 @@ Purchasers of resale HDB flats are usually those not eligible to purchase the Bu
 
 In order to make life easier for those buyers, I have decided to study and research the Singapore HDB resale market, explore the key factors that affecting the resale price and provide a price prediction tool as well as make some recommendations for people who are planning to buy a HDB in near future.
 
+## Executive Summary
+
 I am a freelance data scientist and have selected this project out of self-interest. 
 
-My __problem statement__ for this project is __how might I be able to use a regression machine learning algorithm to build a price prediction tool to better predict the HDB resale price for those using the tool.__ 
+My __problem statement__ for this project is __how might I be able to use a regression machine learning model to build a price prediction tool to better predict the HDB resale price for those using the tool.__ 
 
-My main __target audience__ of this project is the customer who is interested to purchase the resale HDB flat, as well as the current owner that hopes to sell their HDB flat and the property agents/agencies.
+My main __target audience__ of this project is the customer who is __interested to purchase the resale HDB flat__, as well as the __current owner__ that hopes to sell their HDB flat and the __property agents/agencies__.
 
-The original dataset for this project is obtained from the data.gov.sg website. The dataset contains information on all the resale HDB flat transactions for January 2017 - October 2020, more than 80,000 resale HDB data and 11 features.
+The original dataset for this project is obtained from the data.gov.sg website. The dataset contains information on all the resale HDB flat transactions for __January 2017 - October 2020__, more than __80,000 resale HDB data and 11 features__.
 
 __My goal__ for this project is to create both a high performing and generalizable regression model for predicting HDB resale price, using various regression machine learning techniques, feature engineering, feature selection and regularization. Then, I will be looking to evaluate the performance of the models using:
 
@@ -74,31 +76,29 @@ __My goal__ for this project is to create both a high performing and generalizab
     4.6 Model Improvement <br>
     4.7 Web Application Improvement <br>
     
-## Data Dictionary:
+__Data Dictionary:__
 
-1. month (object): This feature shows the date of the HDB sold in the format of year and month.
+1. __month (object)__: This feature shows the date of the HDB sold in the format of year and month.
 
-2. town (object): This feature shows the geographic location of the town that the HDB located in Singapore. There are 26 HDB towns in this dataset: ANG MO KIO, BEDOK, BISHAN, BUKIT BATOK, BUKIT MERAH, BUKIT PANJANG, BUKIT TIMAH, CENTRAL AREA, CHOA CHU KANG, CLEMENTI, GEYLANG, HOUGANG, JURONG EAST, JURONG WEST, KALLANG/WHAMPOA, MARINE PARADE, PASIR RIS, PUNGGOL, QUEENSTOWN, SEMBAWANG, SENGKANG, SERANGOON, TAMPINES, TOA PAYOH, WOODLANDS and YISHUN.
+2. __town (object)__: This feature shows the geographic location of the town that the HDB located in Singapore. There are 26 HDB towns in this dataset: ANG MO KIO, BEDOK, BISHAN, BUKIT BATOK, BUKIT MERAH, BUKIT PANJANG, BUKIT TIMAH, CENTRAL AREA, CHOA CHU KANG, CLEMENTI, GEYLANG, HOUGANG, JURONG EAST, JURONG WEST, KALLANG/WHAMPOA, MARINE PARADE, PASIR RIS, PUNGGOL, QUEENSTOWN, SEMBAWANG, SENGKANG, SERANGOON, TAMPINES, TOA PAYOH, WOODLANDS and YISHUN.
 
-3. flat_type (object): There are 7 different HDB flat types in Singapore: 1 Room, 2 Room, 3 Room, 4 Room, 5 Room, Multi-Generation and Executive. Flat type determines the number of rooms and amenities inside the house.
+3. __flat_type (object)__: There are 7 different HDB flat types in Singapore: 1 Room, 2 Room, 3 Room, 4 Room, 5 Room, Multi-Generation and Executive. Flat type determines the number of rooms and amenities inside the house.
 
-4. block (object): This feature shows the number of the HDB flat in each town.
+4. __block (object)__: This feature shows the number of the HDB flat in each town.
 
-5. street_name (object): This feature shows the HDB flat's street name in each town.
+5. __street_name (object)__: This feature shows the HDB flat's street name in each town.
 
-6. storey_range (object): This feature shows the range of the building level of the HDB flat. The storey is range from floor 1 to floor 51. Each of the storey_range consists of 3 floors such as 01 TO 03, 04 TO 06 etc.
+6. __storey_range (object)__: This feature shows the range of the building level of the HDB flat. The storey is range from floor 1 to floor 51. Each of the storey_range consists of 3 floors such as 01 TO 03, 04 TO 06 etc.
 
-7. floor_area_sqm (float): This feature shows the floor size of the HDB flat in the unit of square meter.
+7. __floor_area_sqm (float)__: This feature shows the floor size of the HDB flat in the unit of square meter.
 
-8. flat_model (object): This feature shows the type of models of the HDB flat. There are 20 HDB flat models in this dataset: Improved, New Generation, DBSS, Standard, Apartment, Simplified, Model A, Premium Apartment, Adjoined flat, Model A-Maisonette, Maisonette, Type S1, Type S2, Model A2, Terrace, Improved-Maisonette, Premium Maisonette, Multi Generation, Premium Apartment Loft and 2-room.
+8. __flat_model (object)__: This feature shows the type of models of the HDB flat. There are 20 HDB flat models in this dataset: Improved, New Generation, DBSS, Standard, Apartment, Simplified, Model A, Premium Apartment, Adjoined flat, Model A-Maisonette, Maisonette, Type S1, Type S2, Model A2, Terrace, Improved-Maisonette, Premium Maisonette, Multi Generation, Premium Apartment Loft and 2-room.
 
-9. lease_commence_date (integer): This feature shows the start date of the lease of the HDB flat in the format of year.
+9. __lease_commence_date (integer)__: This feature shows the start date of the lease of the HDB flat in the format of year.
 
-10. remaining_lease (object): This feature shows the remaining lease of the HDB in the format of year and month. The total lease of Singapore HDB flat starts with 99 years.
+10. __remaining_lease (object)__: This feature shows the remaining lease of the HDB in the format of year and month. The total lease of Singapore HDB flat starts with 99 years.
 
-11. resale_price (float): This feature shows the price of the HDB flat sold in Singapore dollar. This will be the target variable.
-
-
+11. __resale_price (float)__: This feature shows the price of the HDB flat sold in Singapore dollar. This will be the target variable.
 
 ## Conclusion
 
@@ -106,24 +106,23 @@ As you can see from the work above, I have undertaken comprehensive analysis.
 
 In summary, I assessed the EDA, undertook feature engineering/selection and ran regression machine learning models to select the most predictive model. 
 
-As a result, I have successfully created a model that is able to predict the HDB flat `resale_price` in Singapore. The Gradient Boosting Regressor has achieved satisfactory results (RMSE: \$20,394, R-squared: 98.24\%) for HDB resale price prediction compare to the base model (Linear Regression) results (RMSE: \$35,954, R-squared: 94.54\% - under section 2.3: Checking for Homoscedasticity). 
+As a result, I have successfully created a model that is able to predict the HDB flat `resale_price` in Singapore. __The Gradient Boosting Regressor__ has achieved satisfactory results __(RMSE: \\$20,394, R-squared: 98.24\%)__ for HDB resale price prediction compare to the base model (Linear Regression) results __(RMSE: \\$35,954, R-squared: 94.54\% - under section 2.3: Checking for Homoscedasticity)__. 
 
-The Gradient Boosting Regressor model is superior to a simple Linear Regression because Gradient Boosting is a type of machine learning boosting that relies on the intuition that the best possible next model, when combined with previous models, minimizes the overall prediction error. The key idea is to set the target outcomes for this next model in order to minimize the error. But Linear Regression establishes the relationship between two variables using a straight line and it doesn't consider the error.
+__The Gradient Boosting Regressor model is superior to a simple Linear Regression__ because Gradient Boosting is a type of machine learning boosting that relies on the intuition that the best possible next model, when combined with previous models, minimizes the overall prediction error. The key idea is to set the target outcomes for this next model in order to minimize the error. But Linear Regression establishes the relationship between two variables using a straight line and it doesn't consider the error.
 
-<img src='dataset/feature_importance.png' content-align="center" width="80%">
-
-Histogram above shows the order list of the features that impact the resale price based on the Gradient Boosting Regressor feature importance scores. The top 5 features are:
-1. floor_area_sqm – it is obvious that the bigger the space, the greater the price of the HDB flat,
-2. dist_to_city – the nearer to the city, you will able to access to the better amenities and facilities,
-3. remaining_year – the longer the lease, you will able to apply for larger loan from the HDB or banks and the condition of the HDB flat would be relatively better,
-4. mean_floor – the higher floor, you will have better view, cooler, less noise, less mosquitoes etc,
-5. dist_to_pri_sch – Singapore citizen who live within 1km of the school will be given priority to get into the primary school. Most of the Singaporean families will tend stay near to the top primary school so that their children will able to get into the school.
+The __top 5 features__ that impact the resale price based on the Gradient Boosting Regressor feature importance scores are:
+1. __floor_area_sqm__ – it is obvious that the bigger the space, the greater the price of the HDB flat,
+2. __dist_to_city__ – the nearer to the city, you will able to access to the better amenities and facilities,
+3. __remaining_year__ – the longer the lease, you will able to apply for larger loan from the HDB or banks and the condition of the HDB flat would be relatively better,
+4. __mean_floor__ – the higher floor, you will have better view, cooler, less noise, less mosquitoes etc,
+5. __dist_to_pri_sch__ – Singapore citizen who live within 1km of the school will be given priority to get into the primary school. Most of the Singaporean families will tend stay near to the top primary school so that their children will able to get into the school.
     
 I have also created a user-friendly __web application__ that require the user to select the features of their preferred HDB flat. Then the back-end application will generate the predictive price to provide the real time prediction.
 
 ## Benefits of the model
 
-1. The predictive price is presented as a range e.g., the predicted price is \$450,000, the range is between \$430,000 to \$470,000,
+1. The predictive price is presented as a range e.g., the predicted price is \\$450,000, the range is between \\$430,000 to \\$470,000,
+2. User can use this model to buy or sell the HDB (DIY) without approaching the agent, can save their money to pay the agent fee.
 2. Multiple features to improve price prediction,
 3. User-friendly web application,
 4. Can be used equally by buyer, seller, property agents or agencies and others.
